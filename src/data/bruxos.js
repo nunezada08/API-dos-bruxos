@@ -49,4 +49,24 @@ export default [
         patrono: "Lebre",
         especialidade: "Ver criaturas imaginárias (ou não) 👻",
     },
+    {
+        id:6,
+        nome:"Neville Longbottom",
+        casa: "Grifinória",
+        ano: 7,
+        varinha: "Cerejeira e pelo de unicórnio, 30cm",
+        mascote: "Sapo (Trevor)",
+        patrono: "Não conhecido",
+        especialidade: "Herbologia avançada",
+    },
+    {
+        id: 7,
+        nome: "Cho Chang",
+        casa: "Corvinal",
+        ano: 7,
+        varinha: "Salgueiro e fibra de coração de dragão, 23cm",
+        mascote: "Coruja (não nomeada)",
+        parono: "Cisne",
+        especialidade: "Quadribol (Apanhadora)"
+    }
 ];
