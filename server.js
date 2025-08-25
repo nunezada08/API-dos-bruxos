@@ -74,6 +74,63 @@ app.get("/bruxos/:id", (req, res) => {
     }
 });
 
+app.get("/casas/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+
+    const casa = casas.find(c => c.id === id);
+
+    if(casa) {
+        res.status(200).json(casa);
+    } else {
+        res.status(404).json({
+            mensagem: "Casa não encontrada"
+        })
+    }
+});
+
+app.get("/varinhas/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+
+    const varinha = varinhas.find(v => v.id === id);
+
+    if(varinha) {
+        res.status(200).json(varinha);
+    } else {
+        res.status(404).json({
+            mensagem: "Varinha não encontrada"
+        })
+    }
+});
+
+app.get("/animais/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+
+    const animal = animais.find(a => a.id === id);
+
+    if(animal) {
+        res.status(200).json(animal);
+    } else {
+        res.status(404).json({
+            mensagem: "Animal não encontrado"
+        })
+    }
+});
+
+app.get("/pocoes/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+
+    const pocao = pocoes.find(p => p.id === id);
+
+    if(pocao) {
+        res.status(200).json(pocao);
+    } else {
+        res.status(404).json({
+            mensagem: "Poção não encontrada"
+        })
+    }
+});
+
+
 app.get("/bruxos/nome/:nome", (req, res) => {
     let nome = req.params.nome
     nome = nome.toLowerCase()
